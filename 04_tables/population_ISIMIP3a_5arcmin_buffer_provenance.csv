@@ -1,0 +1,10 @@
+site,site_latitude,site_longitude,buffer_km,n_grid_cells,nearest_grid_latitude,nearest_grid_longitude,nearest_grid_distance_km,dataset,data_class,spatial_resolution,buffer_method
+Jolo,6.1098,120.9775,25,22,6.125000000000004,120.95833333333331,2.7105821942580057,ISIMIP3a histsoc,historical_population_reconstruction,5 arcmin,grid_cell_center_haversine_inclusion
+Jolo,6.1098,120.9775,50,94,6.125000000000004,120.95833333333331,2.7105821942580057,ISIMIP3a histsoc,historical_population_reconstruction,5 arcmin,grid_cell_center_haversine_inclusion
+Jolo,6.1098,120.9775,70,183,6.125000000000004,120.95833333333331,2.7105821942580057,ISIMIP3a histsoc,historical_population_reconstruction,5 arcmin,grid_cell_center_haversine_inclusion
+Masinloc,15.55672,119.93036,25,24,15.541666666666663,119.95833333333331,3.4324533969627193,ISIMIP3a histsoc,historical_population_reconstruction,5 arcmin,grid_cell_center_haversine_inclusion
+Masinloc,15.55672,119.93036,50,95,15.541666666666663,119.95833333333331,3.4324533969627193,ISIMIP3a histsoc,historical_population_reconstruction,5 arcmin,grid_cell_center_haversine_inclusion
+Masinloc,15.55672,119.93036,70,188,15.541666666666663,119.95833333333331,3.4324533969627193,ISIMIP3a histsoc,historical_population_reconstruction,5 arcmin,grid_cell_center_haversine_inclusion
+Palapag,12.63476,125.00978,25,24,12.625000000000005,125.04166666666663,3.626063024923583,ISIMIP3a histsoc,historical_population_reconstruction,5 arcmin,grid_cell_center_haversine_inclusion
+Palapag,12.63476,125.00978,50,95,12.625000000000005,125.04166666666663,3.626063024923583,ISIMIP3a histsoc,historical_population_reconstruction,5 arcmin,grid_cell_center_haversine_inclusion
+Palapag,12.63476,125.00978,70,187,12.625000000000005,125.04166666666663,3.626063024923583,ISIMIP3a histsoc,historical_population_reconstruction,5 arcmin,grid_cell_center_haversine_inclusion

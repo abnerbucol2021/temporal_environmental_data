@@ -1,0 +1,10 @@
+site,buffer_km,rows,n_years,first_year,last_year,complete_1900_2018,duplicate_years,negative_category_values
+Jolo,25,119,119,1900,2018,True,0,0
+Jolo,50,119,119,1900,2018,True,0,0
+Jolo,70,119,119,1900,2018,True,0,0
+Masinloc,25,119,119,1900,2018,True,0,0
+Masinloc,50,119,119,1900,2018,True,0,0
+Masinloc,70,119,119,1900,2018,True,0,0
+Palapag,25,119,119,1900,2018,True,0,0
+Palapag,50,119,119,1900,2018,True,0,0
+Palapag,70,119,119,1900,2018,True,0,0

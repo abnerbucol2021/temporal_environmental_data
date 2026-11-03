@@ -1,0 +1,4 @@
+site,total_rows,year_min,year_max,early_period_rows,late_period_rows,missing_sst,missing_population,missing_cropland,missing_pasture,missing_forest,missing_urban
+Jolo,119,1900,2018,20,20,0,0,0,0,0,0
+Masinloc,119,1900,2018,20,20,0,0,0,0,0,0
+Palapag,119,1900,2018,20,20,0,0,0,0,0,0

@@ -1,0 +1,20 @@
+File: D:\temporal_environmental_data\01_raw\EN4\1900\unzipped\EN.4.2.2.f.analysis.g10.190001.nc
+
+DIMENSIONS:
+{'time': 1, 'depth': 42, 'lat': 173, 'lon': 360, 'bnds': 2}
+
+COORDINATES:
+depth: dims=('depth',), shape=(42,), attrs={'long_name': 'depth', 'units': 'metres', 'positive': 'down', 'standard_name': 'depth', 'bounds': 'depth_bnds'}
+lat: dims=('lat',), shape=(173,), attrs={'long_name': 'latitude', 'units': 'degrees_north', 'standard_name': 'latitude'}
+lon: dims=('lon',), shape=(360,), attrs={'long_name': 'longitude', 'units': 'degrees_east', 'standard_name': 'longitude'}
+time: dims=('time',), shape=(1,), attrs={'standard_name': 'time', 'bounds': 'time_bnds'}
+
+DATA VARIABLES:
+temperature: dims=('time', 'depth', 'lat', 'lon'), shape=(1, 42, 173, 360), attrs={'long_name': 'temperature', 'standard_name': 'sea_water_potential_temperature', 'units': 'kelvin', 'valid_min': np.float32(-5.0), 'valid_max': np.float32(45.0)}
+salinity: dims=('time', 'depth', 'lat', 'lon'), shape=(1, 42, 173, 360), attrs={'long_name': 'salinity', 'units': '1', 'standard_name': 'sea_water_salinity', 'valid_min': np.float32(-5.0), 'valid_max': np.float32(48.0)}
+temperature_uncertainty: dims=('time', 'depth', 'lat', 'lon'), shape=(1, 42, 173, 360), attrs={'long_name': 'temperature error standard deviation', 'units': 'kelvin'}
+salinity_uncertainty: dims=('time', 'depth', 'lat', 'lon'), shape=(1, 42, 173, 360), attrs={'long_name': 'salinity error standard deviation', 'units': '1'}
+temperature_observation_weights: dims=('time', 'depth', 'lat', 'lon'), shape=(1, 42, 173, 360), attrs={'long_name': 'temperature observation weights', 'comment': 'The total weighting given to the observation increments when forming the analysis'}
+salinity_observation_weights: dims=('time', 'depth', 'lat', 'lon'), shape=(1, 42, 173, 360), attrs={'long_name': 'salinity observation weights', 'comment': 'The total weighting given to the observation increments when forming the analysis'}
+time_bnds: dims=('time', 'bnds'), shape=(1, 2), attrs={}
+depth_bnds: dims=('depth', 'bnds'), shape=(42, 2), attrs={}

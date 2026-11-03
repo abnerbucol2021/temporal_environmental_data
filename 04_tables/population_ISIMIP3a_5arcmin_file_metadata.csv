@@ -1,0 +1,3 @@
+file,population_variable,population_units,population_long_name,time_units_original,time_reference_year,first_reconstructed_year,last_reconstructed_year,n_time,n_lat,n_lon,dataset,data_class,resolution
+population_histsoc_5arcmin_annual_1850_1900_lon118.0to126.5lat5.0to17.0.nc,total-population,1,total population,years since 1850-1-1 12:00:00,1850,1850,1900,51,144,102,ISIMIP3a histsoc,historical_population_reconstruction,5 arcmin
+population_histsoc_5arcmin_annual_1901_2021_lon118.0to126.5lat5.0to17.0.nc,total-population,1,total population,years since 1850-1-1 12:00:00,1850,1901,2021,121,144,102,ISIMIP3a histsoc,historical_population_reconstruction,5 arcmin

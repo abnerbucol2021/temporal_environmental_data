@@ -1,0 +1,19 @@
+dataset,site,rows,first_year,last_year,n_years,complete_1900_2018,duplicate_site_year_rows,site_coverage,all_three_sites_present,check,result,detail
+ERSSTv5,Jolo,119.0,1900.0,2018.0,119.0,True,0.0,,,,,
+ERSSTv5,Masinloc,119.0,1900.0,2018.0,119.0,True,0.0,,,,,
+ERSSTv5,Palapag,119.0,1900.0,2018.0,119.0,True,0.0,,,,,
+ISIMIP3a_population,Jolo,119.0,1900.0,2018.0,119.0,True,0.0,,,,,
+ISIMIP3a_population,Masinloc,119.0,1900.0,2018.0,119.0,True,0.0,,,,,
+ISIMIP3a_population,Palapag,119.0,1900.0,2018.0,119.0,True,0.0,,,,,
+ETOPO_bathymetry,ALL,3.0,,,,,0.0,Jolo;Masinloc;Palapag,True,,,
+Allen_Coral_Atlas_benthic,ALL,3.0,,,,,0.0,Jolo;Masinloc;Palapag,True,,,
+Allen_Coral_Atlas_diversity,ALL,3.0,,,,,0.0,Jolo;Masinloc;Palapag,True,,,
+Allen_Coral_Atlas_patch_100m_5ha,ALL,3.0,,,,,0.0,Jolo;Masinloc;Palapag,True,,,
+Bathymetric_exploratory_index,ALL,3.0,,,,,0.0,Jolo;Masinloc;Palapag,True,,,
+MASTER_INTEGRATION,ALL,,,,,,,,,historical_master_expected_rows,1.0,Observed 357; expected 357
+MASTER_INTEGRATION,ALL,,,,,,,,,site_comparison_expected_rows,1.0,Observed 3; expected 3
+MASTER_INTEGRATION,ALL,,,,,,,,,script14_primary_table_loaded,1.0,Loaded 3 site rows from sand_rubble_raster_patch_metrics_PRIMARY_100m_5ha.csv
+MASTER_INTEGRATION,ALL,,,,,,,,,historical_master_no_duplicate_site_year,1.0,Each site-year should occur once.
+MASTER_INTEGRATION,ALL,,,,,,,,,site_comparison_no_duplicate_sites,1.0,Each site should occur once.
+MASTER_INTEGRATION,ALL,,,,,,,,,historical_master_all_three_sites,1.0,"Expected Jolo, Masinloc and Palapag."
+MASTER_INTEGRATION,ALL,,,,,,,,,patch_table_all_three_sites,1.0,"Expected Jolo, Masinloc and Palapag."

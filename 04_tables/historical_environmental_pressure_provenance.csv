@@ -1,0 +1,8 @@
+variable,source_dataset,data_class,temporal_support,spatial_support,buffer_km,historical_or_modern,interpretation
+sst_degC,NOAA ERSSTv5,observation_based_reconstruction,"annual, 1900-2018",nearest valid 2-degree ERSST ocean grid cell,,historical,regional reconstructed sea-surface temperature
+population_70km,ISIMIP3a histsoc population,historical_population_reconstruction,"annual, 1900-2018",population summed within 70-km site buffer,70.0,historical,historical human-population pressure proxy
+cropland_percent_70km,ISIMIP3a histsoc land use,historical_landuse_reconstruction,"annual, 1900-2018",0.5-degree source grid intersected with 70-km circular buffer,70.0,historical,cropland percentage of full circular buffer
+pasture_percent_70km,ISIMIP3a histsoc land use,historical_landuse_reconstruction,"annual, 1900-2018",0.5-degree source grid intersected with 70-km circular buffer,70.0,historical,pasture percentage of full circular buffer
+forest_natural_percent_70km,ISIMIP3a histsoc land use,historical_landuse_reconstruction,"annual, 1900-2018",0.5-degree source grid intersected with 70-km circular buffer,70.0,historical,forest + natural vegetation percentage of full circular buffer
+urban_percent_70km,ISIMIP3a histsoc land use,historical_landuse_reconstruction,"annual, 1900-2018",0.5-degree source grid intersected with 70-km circular buffer,70.0,historical,urban percentage of full circular buffer
+forest_loss_pressure_z,derived from ISIMIP3a forest/natural vegetation,derived_standardized_pressure_metric,"annual, 1900-2018",70-km circular buffer,70.0,historical-derived,negative of standardized forest/natural vegetation; positive = greater forest loss relative to 1900-1919 baseline

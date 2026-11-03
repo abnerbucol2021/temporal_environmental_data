@@ -1,0 +1,9 @@
+ISIMIP3a historical population extraction
+============================================================
+Data class: historical_population_reconstruction
+Resolution: 5 arcmin
+Period: 1900-2018
+Buffers: 25, 50, 70 km
+Buffer method: grid-cell-center haversine inclusion
+Population measure: sum of gridded population values
+Time handling: raw numeric annual offsets decoded manually from 'years since YYYY...' because xarray does not support years as a CF datetime unit.

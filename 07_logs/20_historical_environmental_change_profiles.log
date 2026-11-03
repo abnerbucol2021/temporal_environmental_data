@@ -1,0 +1,178 @@
+==============================================================================
+SCRIPT 20 — HISTORICAL ENVIRONMENTAL CHANGE PROFILES
+==============================================================================
+
+CHECKING INPUT
+------------------------------------------------------------------------------
+FOUND: D:\temporal_environmental_data\03_extracted\historical_environmental_pressure_master_1900_2018.csv
+
+MASTER DATASET
+------------------------------------------------------------------------------
+Rows:    357
+Columns: 9
+
+INPUT QC
+------------------------------------------------------------------------------
+Expected rows: 357
+Actual rows:   357
+PASS: expected dimensions obtained.
+
+Jolo
+  rows: 119
+  years: 1900–2018
+  missing years: 0
+
+Masinloc
+  rows: 119
+  years: 1900–2018
+  missing years: 0
+
+Palapag
+  rows: 119
+  years: 1900–2018
+  missing years: 0
+
+==============================================================================
+CALCULATING EARLY AND LATE PERIOD MEANS
+==============================================================================
+Early period: 1900–1919 (20 years)
+Late period:  1999–2018 (20 years)
+
+CALCULATING INTERPRETABLE CHANGE METRICS
+------------------------------------------------------------------------------
+
+CREATING SITE PROFILE TABLE
+------------------------------------------------------------------------------
+
+STANDARDIZING CROSS-SITE CHANGE FOR VISUALIZATION
+------------------------------------------------------------------------------
+
+CALCULATING DESCRIPTIVE VARIABLE-SPECIFIC RANKS
+------------------------------------------------------------------------------
+Saved: D:\temporal_environmental_data\04_tables\historical_environmental_change_early_vs_late.csv
+Saved: D:\temporal_environmental_data\04_tables\historical_environmental_change_site_profiles.csv
+
+==============================================================================
+HISTORICAL CHANGE PROFILE
+1900-1919 MEAN vs 1999-2018 MEAN
+==============================================================================
+    site  sst_change_degC  population_change_percent  cropland_change_pp  pasture_change_pp  forest_natural_loss_pp  urban_change_pp
+    Jolo            0.628                      946.8                0.86               0.20                    2.37            0.393
+Masinloc            0.828                      806.3               14.73               0.70                   18.82            0.476
+ Palapag            0.724                      886.9                5.66               2.13                    9.61            0.388
+
+CREATING FIGURE 1 — RAW CHANGE PROFILE
+------------------------------------------------------------------------------
+Saved: D:\temporal_environmental_data\05_figures\Fig_historical_environmental_change_profiles_raw.png
+Saved: D:\temporal_environmental_data\05_figures\Fig_historical_environmental_change_profiles_raw.pdf
+
+CREATING FIGURE 2 — STANDARDIZED CROSS-SITE PROFILE
+------------------------------------------------------------------------------
+Saved: D:\temporal_environmental_data\05_figures\Fig_historical_environmental_change_profiles_standardized.png
+Saved: D:\temporal_environmental_data\05_figures\Fig_historical_environmental_change_profiles_standardized.pdf
+
+CREATING FIGURE 3 — SITE-CENTRED CHANGE PROFILES
+------------------------------------------------------------------------------
+Saved: D:\temporal_environmental_data\05_figures\Fig_historical_environmental_change_profiles_by_site.png
+Saved: D:\temporal_environmental_data\05_figures\Fig_historical_environmental_change_profiles_by_site.pdf
+
+==============================================================================
+VARIABLE-SPECIFIC CROSS-SITE RANKINGS
+Rank 1 = greatest historical change / pressure
+==============================================================================
+           variable     site  change_value  rank
+        SST warming Masinloc      0.828195     1
+        SST warming  Palapag      0.724348     2
+        SST warming     Jolo      0.627680     3
+  Population growth     Jolo    946.804927     1
+  Population growth  Palapag    886.903877     2
+  Population growth Masinloc    806.332458     3
+ Cropland expansion Masinloc     14.730791     1
+ Cropland expansion  Palapag      5.655490     2
+ Cropland expansion     Jolo      0.856814     3
+  Pasture expansion  Palapag      2.130606     1
+  Pasture expansion Masinloc      0.704591     2
+  Pasture expansion     Jolo      0.203822     3
+Forest/natural loss Masinloc     18.820302     1
+Forest/natural loss  Palapag      9.611018     2
+Forest/natural loss     Jolo      2.373682     3
+    Urban expansion Masinloc      0.475817     1
+    Urban expansion     Jolo      0.393436     2
+    Urban expansion  Palapag      0.388247     3
+
+Saved: D:\temporal_environmental_data\04_tables\historical_environmental_change_variable_ranks.csv
+
+==============================================================================
+SCIENTIFIC INTERPRETATION GUIDE
+==============================================================================
+
+Jolo
+----------------------------------------
+SST change: +0.628 °C
+Population change: +946.8%
+Cropland change: +0.86 percentage points
+Pasture change: +0.20 percentage points
+Forest/natural vegetation loss: +2.37 percentage points
+Urban change: +0.393 percentage points
+
+Masinloc
+----------------------------------------
+SST change: +0.828 °C
+Population change: +806.3%
+Cropland change: +14.73 percentage points
+Pasture change: +0.70 percentage points
+Forest/natural vegetation loss: +18.82 percentage points
+Urban change: +0.476 percentage points
+
+Palapag
+----------------------------------------
+SST change: +0.724 °C
+Population change: +886.9%
+Cropland change: +5.66 percentage points
+Pasture change: +2.13 percentage points
+Forest/natural vegetation loss: +9.61 percentage points
+Urban change: +0.388 percentage points
+
+==============================================================================
+SCRIPT 20 COMPLETE
+==============================================================================
+
+MAIN CHANGE TABLE
+------------------------------------------------------------------------------
+D:\temporal_environmental_data\04_tables\historical_environmental_change_early_vs_late.csv
+
+SITE PROFILE TABLE
+------------------------------------------------------------------------------
+D:\temporal_environmental_data\04_tables\historical_environmental_change_site_profiles.csv
+
+VARIABLE-SPECIFIC RANKINGS
+------------------------------------------------------------------------------
+D:\temporal_environmental_data\04_tables\historical_environmental_change_variable_ranks.csv
+
+QUALITY CONTROL
+------------------------------------------------------------------------------
+D:\temporal_environmental_data\04_tables\historical_environmental_change_profiles_QC.csv
+
+FIGURES
+------------------------------------------------------------------------------
+D:\temporal_environmental_data\05_figures\Fig_historical_environmental_change_profiles_raw.png
+D:\temporal_environmental_data\05_figures\Fig_historical_environmental_change_profiles_raw.pdf
+D:\temporal_environmental_data\05_figures\Fig_historical_environmental_change_profiles_standardized.png
+D:\temporal_environmental_data\05_figures\Fig_historical_environmental_change_profiles_standardized.pdf
+D:\temporal_environmental_data\05_figures\Fig_historical_environmental_change_profiles_by_site.png
+D:\temporal_environmental_data\05_figures\Fig_historical_environmental_change_profiles_by_site.pdf
+
+IMPORTANT INTERPRETATION
+------------------------------------------------------------------------------
+1. Historical change is defined primarily as the difference between 1900–1919 and 1999–2018 period means.
+2. Population change is reported as percent change because absolute population differs strongly among sites.
+3. Cropland, pasture, forest/natural vegetation, and urban change are reported in percentage points of the full 70-km circular buffer.
+4. Forest/natural vegetation decline is sign-reversed only for the forest-loss descriptor so that larger positive values indicate greater loss.
+5. Cross-site z-scores are descriptive standardized values calculated separately for each environmental variable.
+6. No standardized variables are summed or averaged. This script does NOT create a composite environmental-pressure index.
+7. With only three sites, variable-specific ranks and standardized profiles are descriptive and should not be treated as inferential statistics.
+8. ERSSTv5 represents coarse regional reconstructed SST rather than a literal 70-km-buffer SST measurement.
+9. ISIMIP3a population and land-use data are historical reconstructions, not direct annual observations.
+10. Static ETOPO bathymetry and modern Allen Coral Atlas habitat metrics are deliberately excluded from these historical-change calculations.
+
+Log saved: D:\temporal_environmental_data\07_logs\20_historical_environmental_change_profiles.log

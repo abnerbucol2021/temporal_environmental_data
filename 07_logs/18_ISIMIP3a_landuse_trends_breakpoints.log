@@ -1,0 +1,113 @@
+==============================================================================
+SCRIPT 18 — ISIMIP3a LAND-USE TRENDS + BREAKPOINTS
+==============================================================================
+
+Loaded: landuse_ISIMIP3a_buffers_1900_2018.csv
+Rows: 1,071
+
+INPUT QC PASSED
+------------------------------------------------------------------------------
+3 sites × 3 buffers × 119 years
+Expected rows = 1,071
+Actual rows   = 1,071
+
+CALCULATING STATISTICS
+------------------------------------------------------------------------------
+Processing: Jolo
+Processing: Masinloc
+Processing: Palapag
+
+==============================================================================
+PRIMARY 70-KM TREND RESULTS
+Sen slope = percentage points per decade
+==============================================================================
+    site              variable_label  sen_slope_per_decade    mk_tau     mk_p   ols_r2
+    Jolo                    Cropland              0.092012  0.874947 0.000000 0.935563
+    Jolo                     Pasture              0.019847  0.732374 0.000000 0.754401
+    Jolo Forest + natural vegetation             -0.242451 -0.969520 0.000000 0.976346
+    Jolo                  Urban area              0.034423  1.000000 0.000000 0.932718
+Masinloc                    Cropland              1.532375  0.960405 0.000000 0.975772
+Masinloc                     Pasture              0.067772  0.728101 0.000000 0.757892
+Masinloc Forest + natural vegetation             -1.938513 -0.972084 0.000000 0.979071
+Masinloc                  Urban area              0.039621  1.000000 0.000000 0.911101
+ Palapag                    Cropland              0.592305  0.932203 0.000000 0.967157
+ Palapag                     Pasture              0.204600  0.729668 0.000000 0.757890
+ Palapag Forest + natural vegetation             -0.958606 -0.998006 0.000000 0.979863
+ Palapag                  Urban area              0.034650  1.000000 0.000000 0.915213
+
+==============================================================================
+PRIMARY 70-KM EXPLORATORY BREAKPOINTS
+==============================================================================
+    site              variable_label  breakpoint_year  left_slope_per_decade  right_slope_per_decade  sse_improvement_percent  delta_bic_single_minus_segmented      breakpoint_evidence
+    Jolo                    Cropland             1974                 0.0917                  0.0121                  64.5378                          109.0302 strong segmented support
+    Jolo                     Pasture             1955                 0.0202                  0.0390                  77.3386                          162.3191 strong segmented support
+    Jolo Forest + natural vegetation             1974                -0.2142                 -0.1637                  70.3022                          130.1401 strong segmented support
+    Jolo                  Urban area             1981                 0.0268                  0.0774                  94.5571                          332.0554 strong segmented support
+Masinloc                    Cropland             1973                 1.3950                  0.9573                  63.8685                          106.8051 strong segmented support
+Masinloc                     Pasture             1955                 0.0669                  0.1334                  77.4095                          162.6916 strong segmented support
+Masinloc Forest + natural vegetation             1974                -1.7384                 -1.3088                  68.7476                          124.0686 strong segmented support
+Masinloc                  Urban area             1982                 0.0283                  0.0902                  97.1010                          407.0171 strong segmented support
+ Palapag                    Cropland             1973                 0.5601                  0.2764                  68.3402                          122.5271 strong segmented support
+ Palapag                     Pasture             1955                 0.2032                  0.4028                  77.4640                          162.9793 strong segmented support
+ Palapag Forest + natural vegetation             1975                -0.7968                 -0.8128                  84.3879                          206.6605 strong segmented support
+ Palapag                  Urban area             1976                 0.0232                  0.0747                  94.5344                          331.5585 strong segmented support
+
+Creating primary 70-km trend figure...
+Creating Sen-slope comparison figure...
+Creating exploratory breakpoint figure...
+
+==============================================================================
+BUFFER SENSITIVITY — SEN SLOPE DIRECTION
+==============================================================================
+
+Jolo
+--------------------------------------------------
+Cropland: 25 km=+0.079, 50 km=+0.100, 70 km=+0.092 | consistent increase
+Pasture: 25 km=+0.019, 50 km=+0.022, 70 km=+0.020 | consistent increase
+Forest + natural vegetation: 25 km=-0.222, 50 km=-0.267, 70 km=-0.242 | consistent decrease
+Urban area: 25 km=+0.041, 50 km=+0.042, 70 km=+0.034 | consistent increase
+
+Masinloc
+--------------------------------------------------
+Cropland: 25 km=+1.311, 50 km=+1.542, 70 km=+1.532 | consistent increase
+Pasture: 25 km=+0.062, 50 km=+0.069, 70 km=+0.068 | consistent increase
+Forest + natural vegetation: 25 km=-1.834, 50 km=-2.005, 70 km=-1.939 | consistent decrease
+Urban area: 25 km=+0.023, 50 km=+0.026, 70 km=+0.040 | consistent increase
+
+Palapag
+--------------------------------------------------
+Cropland: 25 km=+0.329, 50 km=+0.567, 70 km=+0.592 | consistent increase
+Pasture: 25 km=+0.117, 50 km=+0.195, 70 km=+0.205 | consistent increase
+Forest + natural vegetation: 25 km=-0.789, 50 km=-1.013, 70 km=-0.959 | consistent decrease
+Urban area: 25 km=+0.046, 50 km=+0.043, 70 km=+0.035 | consistent increase
+
+==============================================================================
+INTERPRETATION RULES
+==============================================================================
+1. ISIMIP3a histsoc land use is a historical reconstruction, not direct annual observation.
+2. Sen slope and Mann-Kendall quantify monotonic historical tendencies; they do not establish causality.
+3. OLS is reported for comparability, but reconstructed annual values are temporally autocorrelated, so OLS p-values should not be treated as fully independent-year evidence.
+4. Breakpoints are exploratory structural descriptors. Do not label them as known historical events without independent documentary evidence.
+5. 70 km is the primary scale; 25 and 50 km are spatial sensitivity analyses.
+6. Percentages refer to the entire circular coastal buffer, including marine area, not terrestrial land alone.
+
+==============================================================================
+SCRIPT 18 COMPLETE
+==============================================================================
+
+TABLES
+------------------------------------------------------------------------------
+D:\temporal_environmental_data\04_tables\landuse_ISIMIP3a_trend_statistics.csv
+D:\temporal_environmental_data\04_tables\landuse_ISIMIP3a_period_change_statistics.csv
+D:\temporal_environmental_data\04_tables\landuse_ISIMIP3a_breakpoint_analysis.csv
+D:\temporal_environmental_data\04_tables\landuse_ISIMIP3a_trend_buffer_sensitivity.csv
+D:\temporal_environmental_data\04_tables\landuse_ISIMIP3a_primary_70km_statistics.csv
+
+FIGURES
+------------------------------------------------------------------------------
+D:\temporal_environmental_data\05_figures\Fig_ISIMIP3a_landuse_trends_70km.png
+D:\temporal_environmental_data\05_figures\Fig_ISIMIP3a_landuse_trends_70km.pdf
+D:\temporal_environmental_data\05_figures\Fig_ISIMIP3a_landuse_Sen_slopes_70km.png
+D:\temporal_environmental_data\05_figures\Fig_ISIMIP3a_landuse_Sen_slopes_70km.pdf
+D:\temporal_environmental_data\05_figures\Fig_ISIMIP3a_landuse_breakpoints_70km.png
+D:\temporal_environmental_data\05_figures\Fig_ISIMIP3a_landuse_breakpoints_70km.pdf

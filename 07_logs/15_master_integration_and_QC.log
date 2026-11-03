@@ -1,0 +1,91 @@
+==============================================================================
+SCRIPT 15 — MASTER INTEGRATION + QC
+==============================================================================
+Loaded: ersstv5_annual_1900_2018.csv 357
+Loaded: population_ISIMIP3a_5arcmin_annual_1900_2018.csv 357
+Loaded: spawning_habitat_capacity_bathymetry_70km_summary.csv 3
+Loaded: allen_coral_atlas_benthic_70km_summary.csv 3
+Loaded: benthic_diversity_70km.csv 3
+Loaded: sand_rubble_raster_patch_metrics_PRIMARY_100m_5ha.csv 3
+Loaded: spawning_habitat_capacity_bathymetry_exploratory_index.csv 3
+
+SCRIPT 14 PRIMARY PATCH TABLE
+------------------------------------------------------------------------------
+Definition:
+  raster resolution = 100 m
+  connectivity = 8-neighbour
+  minimum retained patch area = 5 ha
+
+Columns:
+  site
+  buffer_km
+  resolution_m
+  minimum_patch_area_ha
+  raw_raster_candidate_area_km2
+  raw_patch_count
+  filtered_patch_count
+  total_candidate_area_km2
+  mean_patch_area_km2
+  median_patch_area_km2
+  largest_patch_area_km2
+  largest_patch_fraction
+  patch_area_cv
+  nearest_patch_distance_km
+  area_weighted_mean_patch_distance_km
+  mean_nearest_neighbor_centroid_km
+  median_nearest_neighbor_centroid_km
+  connectivity_rule
+  substrate_proxy
+  data_source
+  temporal_status
+  analysis_status
+
+ERSST annual SST column: sst_mean_degC
+Population annual column: population_70km
+
+NUMERIC SANITY CHECKS
+------------------------------------------------------------------------------
+Population: no negative values detected.
+SST range: 27.204 to 29.377 °C
+
+STANDARDIZED SAND+RUBBLE CONFIGURATION
+100 m raster | 8-neighbour | minimum patch area 5 ha
+------------------------------------------------------------------------------
+    site  largest_patch_area_km2  nearest_patch_distance_km
+    Jolo                    7.11                   1.159741
+Masinloc                    1.65                   3.952847
+ Palapag                    3.55                   0.430116
+
+==============================================================================
+SCRIPT 15 COMPLETE
+==============================================================================
+
+Historical master:
+D:\temporal_environmental_data\03_extracted\master_historical_annual_1900_2018.csv
+
+Historical change summary:
+D:\temporal_environmental_data\04_tables\master_historical_change_summary.csv
+
+Integrated historical + modern/static site comparison:
+D:\temporal_environmental_data\04_tables\master_site_comparison_historical_modern.csv
+
+Variable provenance:
+D:\temporal_environmental_data\04_tables\master_variable_provenance.csv
+
+Integration QC:
+D:\temporal_environmental_data\04_tables\master_integration_QC.csv
+
+MASTER DIMENSIONS
+------------------------------------------------------------------------------
+Historical annual master: 357 rows x 4 columns
+Site comparison: 3 rows x 102 columns
+
+Evidence classes remain explicitly separated:
+  ERSSTv5      = observation-based historical reconstruction
+  Population   = historical population reconstruction
+  ETOPO        = static geomorphological context
+  Allen Atlas  = modern satellite-derived benthic context
+  Patch metrics = derived modern spatial metrics (100 m, 8-neighbour, >=5 ha)
+  Bathy index  = exploratory derived index
+
+IMPORTANT: modern/static habitat variables must not be interpreted as 1900-2018 habitat time series.

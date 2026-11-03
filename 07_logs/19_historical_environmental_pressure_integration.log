@@ -1,0 +1,207 @@
+
+==============================================================================
+SCRIPT 19 — HISTORICAL ENVIRONMENTAL-PRESSURE INTEGRATION
+==============================================================================
+
+==============================================================================
+CHECKING INPUT FILES
+==============================================================================
+FOUND: D:\temporal_environmental_data\03_extracted\ersstv5_annual_1900_2018.csv
+FOUND: D:\temporal_environmental_data\03_extracted\population_ISIMIP3a_5arcmin_annual_1900_2018.csv
+FOUND: D:\temporal_environmental_data\03_extracted\landuse_ISIMIP3a_buffers_1900_2018.csv
+
+==============================================================================
+LOADING HISTORICAL DATA
+==============================================================================
+ERSSTv5:      357 rows × 18 columns
+Population:    357 rows × 7 columns
+Land use:      1,071 rows × 28 columns
+
+==============================================================================
+IDENTIFYING INPUT COLUMNS
+==============================================================================
+SST site column:  site
+SST year column:  year
+SST value column: sst_mean_degC
+Population site column:   site
+Population year column:   year
+Population buffer column: None
+Population value column:  population_70km
+Land-use site column:     site
+Land-use year column:     year
+Land-use buffer column:   buffer_km
+Cropland:                 cropland_total_percent_of_buffer
+Pasture:                  pastures_percent_of_buffer
+Forest/natural:           forests_natural_percent_of_buffer
+Urban:                    urban_percent_of_buffer
+Agriculture:              agricultural_percent_of_buffer
+
+==============================================================================
+PREPARING ERSSTv5
+==============================================================================
+Prepared SST rows: 357
+
+==============================================================================
+PREPARING ISIMIP3a POPULATION
+==============================================================================
+Prepared population rows: 357
+
+==============================================================================
+PREPARING ISIMIP3a LAND USE
+==============================================================================
+Prepared land-use rows: 357
+
+==============================================================================
+PRE-MERGE QC
+==============================================================================
+Expected site-year rows per historical dataset: 357
+ERSSTv5: 357 rows
+Population: 357 rows
+Land use: 357 rows
+
+==============================================================================
+MERGING HISTORICAL DATASETS
+==============================================================================
+Master rows:    357
+Master columns: 9
+
+==============================================================================
+MASTER DATASET QC
+==============================================================================
+
+Jolo
+----------------------------------------
+Rows: 119
+Year range: 1900–2018
+Missing years: 0
+sst_degC: missing=0, range=28.019339 to 29.377390
+population_70km: missing=0, range=50733.044479 to 746095.571381
+cropland_percent_70km: missing=0, range=1.084886 to 2.134699
+pasture_percent_70km: missing=0, range=0.131350 to 0.358049
+forest_natural_percent_70km: missing=0, range=7.810057 to 10.685850
+urban_percent_70km: missing=0, range=0.052884 to 0.548743
+agricultural_percent_70km: missing=0, range=1.216236 to 2.492748
+
+Masinloc
+----------------------------------------
+Rows: 119
+Year range: 1900–2018
+Missing years: 0
+sst_degC: missing=0, range=27.203928 to 29.201600
+population_70km: missing=0, range=184778.317102 to 2302372.464890
+cropland_percent_70km: missing=0, range=6.473631 to 23.806352
+pasture_percent_70km: missing=0, range=0.580710 to 1.362700
+forest_natural_percent_70km: missing=0, range=25.251415 to 47.385279
+urban_percent_70km: missing=0, range=0.069356 to 0.673570
+agricultural_percent_70km: missing=0, range=7.054341 to 25.169053
+
+Palapag
+----------------------------------------
+Rows: 119
+Year range: 1900–2018
+Missing years: 0
+sst_degC: missing=0, range=27.772963 to 29.222183
+population_70km: missing=0, range=56864.315170 to 770471.134949
+cropland_percent_70km: missing=0, range=2.361445 to 9.002896
+pasture_percent_70km: missing=0, range=1.747838 to 4.108758
+forest_natural_percent_70km: missing=0, range=25.872385 to 37.005552
+urban_percent_70km: missing=0, range=0.042735 to 0.524697
+agricultural_percent_70km: missing=0, range=4.109283 to 13.111654
+
+==============================================================================
+NUMERIC SANITY CHECKS
+==============================================================================
+Population: no negative values detected.
+Land-use percentages: all values within 0–100.
+SST range: 27.204 to 29.377 °C
+
+==============================================================================
+STANDARDIZING RELATIVE TO 1900–1919 BASELINE
+==============================================================================
+
+==============================================================================
+CREATING DIRECTIONALLY CONSISTENT FOREST-LOSS METRIC
+==============================================================================
+Created forest_loss_pressure_z = -forest_natural_percent_70km_z
+
+==============================================================================
+CALCULATING HISTORICAL CHANGE SUMMARY
+==============================================================================
+
+==============================================================================
+CALCULATING DESCRIPTIVE WITHIN-SITE CORRELATIONS
+==============================================================================
+
+==============================================================================
+CREATING VARIABLE PROVENANCE TABLE
+==============================================================================
+
+==============================================================================
+CREATING STANDARDIZED HISTORICAL-PRESSURE FIGURE
+==============================================================================
+Saved: D:\temporal_environmental_data\05_figures\Fig_historical_environmental_pressure_standardized_1900_2018.png
+Saved: D:\temporal_environmental_data\05_figures\Fig_historical_environmental_pressure_standardized_1900_2018.pdf
+
+==============================================================================
+CREATING SITE-CENTRED STANDARDIZED FIGURE
+==============================================================================
+Saved: D:\temporal_environmental_data\05_figures\Fig_historical_environmental_pressure_by_site_1900_2018.png
+Saved: D:\temporal_environmental_data\05_figures\Fig_historical_environmental_pressure_by_site_1900_2018.pdf
+
+==============================================================================
+SCRIPT 19 COMPLETE
+==============================================================================
+
+MASTER HISTORICAL DATASET
+------------------------------------------------------------------------------
+D:\temporal_environmental_data\03_extracted\historical_environmental_pressure_master_1900_2018.csv
+
+STANDARDIZED HISTORICAL DATASET
+------------------------------------------------------------------------------
+D:\temporal_environmental_data\03_extracted\historical_environmental_pressure_standardized_1900_2018.csv
+
+BASELINE STATISTICS
+------------------------------------------------------------------------------
+D:\temporal_environmental_data\04_tables\historical_environmental_pressure_baseline_1900_1919.csv
+
+HISTORICAL CHANGE SUMMARY
+------------------------------------------------------------------------------
+D:\temporal_environmental_data\04_tables\historical_environmental_pressure_change_summary.csv
+
+DESCRIPTIVE CORRELATIONS
+------------------------------------------------------------------------------
+D:\temporal_environmental_data\04_tables\historical_environmental_pressure_correlations.csv
+
+VARIABLE PROVENANCE
+------------------------------------------------------------------------------
+D:\temporal_environmental_data\04_tables\historical_environmental_pressure_provenance.csv
+
+QUALITY CONTROL
+------------------------------------------------------------------------------
+D:\temporal_environmental_data\04_tables\historical_environmental_pressure_QC.csv
+
+EXPECTED MASTER DIMENSIONS
+------------------------------------------------------------------------------
+3 sites × 119 years = 357 rows
+Actual master rows = 357
+PASS: expected site-year dimensions obtained.
+
+MISSING VALUES
+------------------------------------------------------------------------------
+sst_degC: 0
+population_70km: 0
+cropland_percent_70km: 0
+pasture_percent_70km: 0
+forest_natural_percent_70km: 0
+urban_percent_70km: 0
+agricultural_percent_70km: 0
+
+IMPORTANT INTERPRETATION
+------------------------------------------------------------------------------
+1. These standardized trajectories do NOT constitute a composite environmental-pressure index.
+2. Z-scores only express departure from each site's own 1900–1919 baseline.
+3. A large z-score can occur when baseline variability is small; it must not automatically be interpreted as a proportionally larger ecological effect.
+4. Forest-loss pressure is only the sign-reversed standardized forest/natural vegetation trajectory.
+5. Correlations among historical variables are descriptive because long-term trends and temporal autocorrelation violate simple independence assumptions.
+6. ERSSTv5 is NOT a 70-km buffer measurement. It represents the nearest valid coarse regional SST reconstruction grid cell.
+7. ETOPO and Allen Coral Atlas metrics remain separate modern/static ecological-context variables.

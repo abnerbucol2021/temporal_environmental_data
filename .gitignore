@@ -1,0 +1,14 @@
+# Large environmental datasets excluded from GitHub
+/01_raw/Allen_Coral_Atlas_WFS/Jolo_Allen_Coral_Atlas_benthic_tiled.geojson
+/01_raw/EN4/1900/EN.4.2.2.analyses.g10.1900.zip
+
+# Oversized vector figures
+/05_figures/Fig_Allen_benthic_maps_70km.svg
+/05_figures/Fig_Allen_benthic_maps_70km_FIXED.svg
+
+# Temporary and local files
+.Rhistory
+.RData
+.Rproj.user/
+__pycache__/
+*.tmp

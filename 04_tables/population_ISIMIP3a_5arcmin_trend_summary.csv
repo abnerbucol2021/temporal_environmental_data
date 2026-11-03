@@ -1,0 +1,10 @@
+site,buffer_km,n_years,ols_slope_people_per_year,ols_slope_people_per_decade,r_squared,note
+Jolo,25,119,3823.263295889602,38232.63295889602,0.8849369254634146,Descriptive OLS only; formal Mann-Kendall and Sen slope can be added later.
+Jolo,50,119,5755.018906253808,57550.189062538084,0.8872205810695784,Descriptive OLS only; formal Mann-Kendall and Sen slope can be added later.
+Jolo,70,119,5764.959321972322,57649.59321972322,0.8872979637568904,Descriptive OLS only; formal Mann-Kendall and Sen slope can be added later.
+Masinloc,25,119,702.3550674120476,7023.550674120475,0.9076298118516726,Descriptive OLS only; formal Mann-Kendall and Sen slope can be added later.
+Masinloc,50,119,4384.240511483173,43842.40511483172,0.9048486739508895,Descriptive OLS only; formal Mann-Kendall and Sen slope can be added later.
+Masinloc,70,119,17692.982199641705,176929.82199641704,0.8959616833125177,Descriptive OLS only; formal Mann-Kendall and Sen slope can be added later.
+Palapag,25,119,1389.1036840843308,13891.036840843308,0.8880628139552399,Descriptive OLS only; formal Mann-Kendall and Sen slope can be added later.
+Palapag,50,119,3883.8174895802194,38838.17489580219,0.8888971946632094,Descriptive OLS only; formal Mann-Kendall and Sen slope can be added later.
+Palapag,70,119,6037.81055737662,60378.105573766195,0.8929117828520854,Descriptive OLS only; formal Mann-Kendall and Sen slope can be added later.

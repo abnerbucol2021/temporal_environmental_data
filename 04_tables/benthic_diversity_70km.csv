@@ -1,0 +1,4 @@
+site,buffer_km,mapped_benthic_area_km2,class_richness,shannon_diversity_H,shannon_evenness_J,simpson_diversity_1_minus_D,dominant_class,dominant_class_fraction,dominant_class_percent,data_class
+Jolo,70,475.873940564397,6,1.4901062039567168,0.8316441071181838,0.7292420899871963,Coral/Algae,0.4354399376553858,43.54399376553858,modern_satellite_derived_benthic_habitat_map
+Masinloc,70,191.20180606759482,6,1.050571053058026,0.5863348686588185,0.5043042173695302,Coral/Algae,0.6811289885179452,68.11289885179453,modern_satellite_derived_benthic_habitat_map
+Palapag,70,252.86656464470687,6,1.5249795627171194,0.8511072992258986,0.7494824877301709,Coral/Algae,0.3751651195953507,37.51651195953507,modern_satellite_derived_benthic_habitat_map

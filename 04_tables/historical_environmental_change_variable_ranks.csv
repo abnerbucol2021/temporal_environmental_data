@@ -1,0 +1,19 @@
+variable,site,change_value,rank
+SST warming,Masinloc,0.8281950499999979,1
+SST warming,Palapag,0.7243478500000009,2
+SST warming,Jolo,0.6276796999999981,3
+Population growth,Jolo,946.8049265006644,1
+Population growth,Palapag,886.9038768096905,2
+Population growth,Masinloc,806.3324577446903,3
+Cropland expansion,Masinloc,14.730790731252482,1
+Cropland expansion,Palapag,5.655490397164462,2
+Cropland expansion,Jolo,0.8568138859721417,3
+Pasture expansion,Palapag,2.1306059531212633,1
+Pasture expansion,Masinloc,0.7045905992291394,2
+Pasture expansion,Jolo,0.20382176869454854,3
+Forest/natural loss,Masinloc,18.820301931265146,1
+Forest/natural loss,Palapag,9.611017698660703,2
+Forest/natural loss,Jolo,2.373681971885201,3
+Urban expansion,Masinloc,0.4758167774111784,1
+Urban expansion,Jolo,0.39343637361143285,2
+Urban expansion,Palapag,0.38824700036090365,3

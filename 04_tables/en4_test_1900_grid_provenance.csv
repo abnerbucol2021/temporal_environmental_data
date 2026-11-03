@@ -1,0 +1,4 @@
+site,site_latitude,site_longitude,en4_grid_latitude,en4_grid_longitude,site_to_grid_center_km,dataset,bias_correction_member,data_class,spatial_resolution,requested_buffer_km,buffer_applied,test_year
+Jolo,6.1098,120.9775,6.0,121.0,12.46013049207596,EN.4.2.2,g10,observation_constrained_objective_analysis,1 degree,70,False,1900
+Masinloc,15.55672,119.93036,16.0,120.0,49.85066273666144,EN.4.2.2,g10,observation_constrained_objective_analysis,1 degree,70,False,1900
+Palapag,12.63476,125.00978,13.0,125.0,40.62673191838007,EN.4.2.2,g10,observation_constrained_objective_analysis,1 degree,70,False,1900

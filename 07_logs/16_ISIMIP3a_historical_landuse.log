@@ -1,0 +1,123 @@
+==============================================================================
+SCRIPT 16 — ISIMIP3a HISTORICAL LAND USE
+==============================================================================
+Required ISIMIP regional NetCDF files already exist locally.
+No download required.
+
+ISIMIP FILES FOUND
+------------------------------------------------------------------------------
+  D:\temporal_environmental_data\01_raw\LUH2_landuse\isimip-download-c99396001b587ddcf8ca1fb8898bf62e5b1484c9\landuse-totals_histsoc_annual_1850_1900_lon118.0to126.5lat5.0to17.0.nc
+  D:\temporal_environmental_data\01_raw\LUH2_landuse\isimip-download-c99396001b587ddcf8ca1fb8898bf62e5b1484c9\landuse-totals_histsoc_annual_1901_2021_lon118.0to126.5lat5.0to17.0.nc
+  D:\temporal_environmental_data\01_raw\LUH2_landuse\isimip-download-c99396001b587ddcf8ca1fb8898bf62e5b1484c9\landuse-urbanareas_histsoc_annual_1850_1900_lon118.0to126.5lat5.0to17.0.nc
+  D:\temporal_environmental_data\01_raw\LUH2_landuse\isimip-download-c99396001b587ddcf8ca1fb8898bf62e5b1484c9\landuse-urbanareas_histsoc_annual_1901_2021_lon118.0to126.5lat5.0to17.0.nc
+
+Opening: landuse-totals_histsoc_annual_1850_1900_lon118.0to126.5lat5.0to17.0.nc
+Opening: landuse-totals_histsoc_annual_1901_2021_lon118.0to126.5lat5.0to17.0.nc
+Standard CF time decoding failed; retrying with decode_times=False.
+
+Opening: landuse-urbanareas_histsoc_annual_1850_1900_lon118.0to126.5lat5.0to17.0.nc
+Opening: landuse-urbanareas_histsoc_annual_1901_2021_lon118.0to126.5lat5.0to17.0.nc
+Standard CF time decoding failed; retrying with decode_times=False.
+
+TIME COORDINATE QC
+------------------------------------------------------------------------------
+TOTALS: 1900-2018 (119 annual steps)
+URBAN:  1900-2018 (119 annual steps)
+Expected study period: 1900-2018 = 119 annual steps
+
+TOTALS DATASET DIMENSIONS
+------------------------------------------------------------------------------
+{'year': 119, 'lat': 24, 'lon': 17}
+
+URBAN DATASET DIMENSIONS
+------------------------------------------------------------------------------
+{'year': 119, 'lat': 24, 'lon': 17}
+
+TOTALS VARIABLES
+------------------------------------------------------------------------------
+  cropland_irrigated | units=1 | long_name=irrigated crops
+  cropland_rainfed | units=1 | long_name=rainfed crops
+  cropland_total | units=1 | long_name=total crops
+  forests_and_natural_vegetation | units=1 | long_name=Share of Forests and Natural Vegetation
+  pastures | units=1 | long_name=rainfed managed pasture
+
+URBAN VARIABLES
+------------------------------------------------------------------------------
+  urbanareas | units=1 | long_name=urban area fraction
+
+SELECTED LAND-USE VARIABLES
+------------------------------------------------------------------------------
+  cropland_total <- cropland_total
+  cropland_rainfed <- cropland_rainfed
+  cropland_irrigated <- cropland_irrigated
+  pastures <- pastures
+  forests_natural <- forests_and_natural_vegetation
+  urban <- urbanareas
+
+CALCULATING EXACT BUFFER–GRID INTERSECTIONS
+------------------------------------------------------------------------------
+Processing spatial weights: Jolo
+Processing spatial weights: Masinloc
+Processing spatial weights: Palapag
+
+Generated 70 grid-cell/buffer overlap weights.
+
+EXTRACTING HISTORICAL LAND USE
+------------------------------------------------------------------------------
+Extracting: Jolo
+Extracting: Masinloc
+Extracting: Palapag
+
+NUMERIC SANITY CHECKS
+------------------------------------------------------------------------------
+cropland_total_percent_of_buffer: 1.0849 to 23.8804%
+cropland_rainfed_percent_of_buffer: 1.0849 to 14.4797%
+cropland_irrigated_percent_of_buffer: 0.0000 to 10.3229%
+pastures_percent_of_buffer: 0.0886 to 4.1088%
+forests_natural_percent_of_buffer: 7.8101 to 50.6634%
+urban_percent_of_buffer: 0.0427 to 0.7409%
+agricultural_percent_of_buffer: 1.2162 to 25.2736%
+
+70-KM HISTORICAL CHANGE PREVIEW
+Change from 1900 to 2018 (percentage points)
+------------------------------------------------------------------------------
+    site  cropland_total_percent_of_buffer_change_1900_2018_pp  pastures_percent_of_buffer_change_1900_2018_pp  forests_natural_percent_of_buffer_change_1900_2018_pp  urban_percent_of_buffer_change_1900_2018_pp
+    Jolo                                              1.049813                                        0.226699                                              -2.875794                                     0.495859
+Masinloc                                             17.332721                                        0.781990                                             -22.133864                                     0.604214
+ Palapag                                              6.641452                                        2.360919                                             -11.133167                                     0.481963
+
+==============================================================================
+SCRIPT 16 COMPLETE
+==============================================================================
+
+Annual historical land use:
+D:\temporal_environmental_data\03_extracted\landuse_ISIMIP3a_buffers_1900_2018.csv
+
+Historical change summary:
+D:\temporal_environmental_data\04_tables\landuse_ISIMIP3a_change_summary.csv
+
+Buffer provenance:
+D:\temporal_environmental_data\04_tables\landuse_ISIMIP3a_buffer_provenance.csv
+
+File metadata:
+D:\temporal_environmental_data\04_tables\landuse_ISIMIP3a_file_metadata.csv
+
+Quality control:
+D:\temporal_environmental_data\04_tables\landuse_ISIMIP3a_QC.csv
+
+EXPECTED DIMENSIONS
+------------------------------------------------------------------------------
+Annual table:
+3 sites × 3 buffers × 119 years = 1,071 rows
+Actual annual rows: 1,071
+
+EVIDENCE CLASS
+------------------------------------------------------------------------------
+ISIMIP3a land use = historical land-use reconstruction
+NOT direct annual satellite observation.
+
+SPATIAL INTERPRETATION
+------------------------------------------------------------------------------
+70 km = primary historical land-use analysis.
+25 km and 50 km = spatial sensitivity analyses.
+The source grid is approximately 0.5 degrees, so small-buffer results must not be interpreted as fine-scale local land-cover measurements.

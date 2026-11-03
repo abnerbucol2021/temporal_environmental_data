@@ -1,0 +1,4 @@
+site,site_latitude,site_longitude,ersst_grid_latitude,ersst_grid_longitude,site_to_grid_center_km,requested_buffer_km,buffer_applied,spatial_extraction,effective_spatial_support,dataset,data_class,processing_level,period_used
+Jolo,6.1098,120.9775,6.0,120.0,108.77416663587786,70,False,nearest_ocean_grid_cell,2 degree ERSST grid cell,NOAA ERSSTv5,observation_based_reconstruction,NOAA Level 4,1900-2018
+Masinloc,15.55672,119.93036,16.0,120.0,49.85066273666144,70,False,nearest_ocean_grid_cell,2 degree ERSST grid cell,NOAA ERSSTv5,observation_based_reconstruction,NOAA Level 4,1900-2018
+Palapag,12.63476,125.00978,12.0,126.0,128.66099148024773,70,False,nearest_ocean_grid_cell,2 degree ERSST grid cell,NOAA ERSSTv5,observation_based_reconstruction,NOAA Level 4,1900-2018
